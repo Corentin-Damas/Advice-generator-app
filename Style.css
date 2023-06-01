@@ -1,0 +1,102 @@
+:root {
+  --main-color: black;
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+
+  --grey-blue: hsl(217, 19%, 38%);
+  --dark-grey-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+  /* color: var(--main-color) */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 2.8rem;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--dark-blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+.main-content {
+  background-color: var(--dark-grey-blue);
+  min-height: 40rem;
+  max-height: 60vh;
+  min-width: 50rem;
+  max-width: 60vw;
+  border-radius: 30px;
+  padding: 6rem 0 8rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.advice-tag {
+  color: var(--neon-green);
+  font-size: 2rem;
+}
+
+.advice-text {
+  color: var(--light-cyan);
+  padding: 0 10%;
+}
+
+.btn-random-quote,
+.btn-random-quote:link,
+.btn-random-quote:visited {
+  width: 6rem;
+  height: 6rem;
+  display: inline-block;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  border: none;
+  background-color: var(--neon-green);
+  box-shadow: 0 0 6rem hsla(150, 100%, 66%, 0.2);
+  border-radius: 50%;
+
+  transform: translate(-50%, 50%) translateY(0);
+  transition: all 0.2s;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-random-quote:hover {
+  transform: translate(-50%, 50%) translateY(-3px);
+  box-shadow: 0 0 6rem hsla(150, 100%, 66%, 0.5);
+}
+
+.btn-random-quote:active {
+  transform: translate(-50%, 50%) translateY(1px);
+  box-shadow: 0 0 6rem hsla(150, 100%, 66%, 0.5);
+}
