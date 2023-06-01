@@ -11,7 +11,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://corentin-damas.github.io/Advice-generator-app/)
+- Solution: (https://corentin-damas.github.io/Advice-generator-app/)
 
 ### Built with
 
